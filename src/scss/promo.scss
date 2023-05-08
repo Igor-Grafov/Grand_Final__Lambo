@@ -1,0 +1,59 @@
+.promo {
+   background: url('@img/promo.jpg') center no-repeat;
+   background-size: cover;
+
+   // .promo__container
+
+
+   // .promo__inner
+
+   &__inner {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      min-height: 100vh;
+      padding-top: 100px;
+   }
+
+   // .promo__title
+
+   &__title {
+      font-family: Impact, Haettenschweiler;
+      @include adaptiveValue("font-size", 76, 35);
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      @include adaptiveValue("margin-bottom", 10, 5);
+   }
+
+   // .promo__subtitle
+
+   &__subtitle {
+      font-family: Impact, Haettenschweiler;
+      @include adaptiveValue("font-size", 48, 24);
+      font-weight: 400;
+      border-bottom: 1px solid #040404;
+      @include adaptiveValue("margin-bottom", 10, 5);
+      align-self: center;
+
+      span {
+         display: block;
+         @include adaptiveValue("font-size", 34, 17);
+         color: #9F6B08;
+         padding: 10px 0;
+      }
+   }
+
+   // .promo__text
+
+   &__text {
+      @include adaptiveValue("font-size", 16, 12);
+      color: #363636;
+      @include adaptiveValue("margin-bottom", 10, 5);
+   }
+
+   &__arrow {
+      margin-top: auto;
+      @include adaptiveValue("margin-bottom", 30, 15);
+      align-self: center;
+   }
+}
