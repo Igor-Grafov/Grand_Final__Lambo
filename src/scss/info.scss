@@ -1,0 +1,57 @@
+.info {
+   @include adaptiveValue("margin-bottom", 100, 50);
+   // .info__contaier
+
+   &__contaier {}
+}
+
+.info-part {
+   @include adaptiveValue("margin-bottom", 100, 50);
+   display: flex;
+   // .info-part__title
+
+   &__title {
+      font-weight: 300;
+      @include adaptiveValue("font-size", 32, 17);
+      text-transform: uppercase;
+      @include adaptiveValue("margin-bottom", 30, 15);
+   }
+
+   // .info-part__textbox
+
+   &__textbox {
+      display: flex;
+      justify-content: space-between;
+      gap: 0 20px;
+   }
+
+   // .info-part__text
+
+   &__text {
+      flex-basis: 440px;
+      margin-bottom: 30px;
+
+   }
+
+   // .info-part__img
+
+   &__img {
+      object-fit: cover;
+   }
+
+   // .info-part__content
+
+   &__content {}
+
+   // .info-part__table
+
+   &__table {}
+}
+
+.info-part--first {
+   display: block;
+}
+
+.info-part--table {
+   @include adaptiveValue("padding-top", 66, 33);
+}

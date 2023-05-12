@@ -1,10 +1,7 @@
 .promo {
    background: url('@img/promo.jpg') center no-repeat;
    background-size: cover;
-
-   // .promo__container
-
-
+   @include adaptiveValue("margin-bottom", 100, 50);
    // .promo__inner
 
    &__inner {
